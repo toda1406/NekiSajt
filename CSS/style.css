@@ -1,0 +1,145 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13.05.2018., 15.29.49
+    Author     : toda
+*/
+body{
+    margin: 0;
+    padding:0;
+    font-family:'Open Sans', sans-serif;
+    font-size: 16px;
+    color:#333;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+    color:#000;
+    margin: 0 0 0.5; 
+}
+p{
+    margin: 0 0 0.5;  
+}
+a:link,
+a:visited{
+color:#094186;
+text-decoration: none;
+}
+a:hover{
+    color:#006666;
+    text-decoration: none;
+}
+a:active{
+    color:#FFF;
+}
+.negative{
+    color:#FFF;/*globalno uredjivanje teksta*/
+}
+.negative h1
+.negative h2,
+.negative h3,
+.negative h4,
+.negative h5,
+.negative h6{
+  color: #FFF; 
+}
+.negative a:link,
+.negative a:visited{
+    color:#FFF;
+   text-decoration: none;
+}
+.negative a:hover{
+    color:#ff3333;
+    text-decoration: none;
+}
+.negative a:active{
+    color:#FFF;
+}
+.dugme{
+    display: inline-block;
+    color:#094186;
+    border:2px solid activeborder;
+    background: rgba(9,65,134,0);
+    border-radius:25px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;/*razmak da bi dugmici izgledali lepse*/
+    line-height: 1;
+    padding: 14px 28px;
+    margin: 20px 5px;
+    text-transform: uppercase;
+    transition: 1s all ease;/*postepeno se utapaju dugmici*/
+}
+.dugme:hover{
+    background: rgba(9,65,134,1);
+    color:#fff;
+}
+.negative .dugme{
+    border:2px solid #094186;
+    color:#FFF;
+    background:rgba(255,255,255,0)
+}
+.negative .dugme:hover{
+     background:rgba(255,255,255,1);
+     color:#094186;
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    }
+#header{
+    background-color: #fff;
+    padding: 20px 0;
+    border: 1px solid #094186;
+}
+#logo{
+    float:left;
+}
+#nav{
+    float:right;
+}
+#front{
+    text-align: center;
+    padding: 220px 0;
+    background-image:URL(../images/zgrada1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+#services{
+    text-align: center;
+    padding: 100px 0 ;
+}
+.service{
+    float:left;
+    width: 350px;
+    height: 300px;
+    margin-right: 75px;
+    margin-top: 40px;
+    position: relative;    
+}
+.service:nth-of-type(3n){
+    margin-right: 0;
+}
+.serviceText{
+    position: absolute;
+    bottom: -300px;
+    left:0;
+    width: 350px;
+    height: 200px;
+    padding: 50px 0 ;
+    background: rgba(255,255,255,0);
+    font-size: 1.2em;
+    transition: 1s all ease;
+}
+.service:hover .serviceText{
+    bottom: 0;
+    background: rgba(255,255,255,0.7);
+}
+
+    
+
